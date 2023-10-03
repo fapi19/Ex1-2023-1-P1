@@ -292,12 +292,16 @@ void cargarNotas( char ***&cursos_cod, int ***&cursos_nota_sem_veces,
                 nCursos[posAlumno],ultimoCiclo,bufferNotaSemVeces[posAlumno]);
             //cout <<posCurso;
         // si es que no se encuentra se ingresa como uno nuevo
+            cout <<posCurso <<endl;
             if(posCurso== -1 ){
                 //cout <<posCurso << endl;
                 ingresarCurso(codCurso, ciclo, nota, cursos_cred, 
                         escalas, escalaAlumno,
                         bufferCod[posAlumno],bufferNotaSemVeces[posAlumno],
                         bufferCostos[posAlumno],nCursos[posAlumno],cursos);
+                for(int i= 0; bufferCod[posAlumno][i];i++){
+                    cout << bufferCod[posAlumno][i]<<endl;
+                }
             }
 //            // aca ya se encontró y se debe actualizar
 //            else{
